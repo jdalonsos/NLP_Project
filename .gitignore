@@ -7,7 +7,6 @@ models/
 data/raw/
 data/processed/
 
-*.pt
 *.bin
 *.pkl
 *.joblib
