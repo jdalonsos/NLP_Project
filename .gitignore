@@ -1,1 +1,16 @@
-.venv
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+results/
+models/
+data/raw/
+data/processed/
+
+*.pt
+*.bin
+*.pkl
+*.joblib
+*.h5
+*.csv
+*.xlsx

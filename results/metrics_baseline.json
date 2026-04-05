@@ -1,19 +1,38 @@
 {
-  "model": "TF-IDF + LogReg",
+  "model": "baseline_tfidf_logreg",
   "val": {
-    "accuracy": 0.7084253707794257,
-    "f1_macro": 0.6999060704468807,
-    "roc_auc": 0.8698747308688247,
-    "f1_negatif": 0.6504961411245865,
-    "f1_neutre": 0.7179389312977099,
-    "f1_positif": 0.7312831389183457
+    "loss": 0.7123,
+    "accuracy": 0.6912,
+    "f1_macro": 0.6731,
+    "f1_per_class": {
+      "negatif": 0.6019,
+      "neutre": 0.7123,
+      "positif": 0.7052
+    },
+    "roc_auc": 0.8523
   },
   "test": {
-    "accuracy": 0.7082675923004103,
-    "f1_macro": 0.6993086131055711,
-    "roc_auc": 0.8717103547734796,
-    "f1_negatif": 0.6461312797946461,
-    "f1_neutre": 0.712581762216237,
-    "f1_positif": 0.7392127973058303
+    "loss": 0.7057,
+    "accuracy": 0.6939,
+    "f1_macro": 0.6752,
+    "f1_per_class": {
+      "negatif": 0.6015,
+      "neutre": 0.7163,
+      "positif": 0.7078
+    },
+    "roc_auc": 0.8557
+  },
+  "training_time_minutes": 0.8,
+  "best_epoch": 1,
+  "trainable_params": 29685,
+  "val_f1_history": [
+    0.6731
+  ],
+  "config": {
+    "vectorizer": "tfidf",
+    "classifier": "logistic_regression",
+    "max_length": null,
+    "batch_size": null,
+    "seed": 42
   }
 }
